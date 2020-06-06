@@ -62,18 +62,18 @@
                                     } else {
                                         echo $conn->error;
                                         $_SESSION["file"] = "Database Failure";
-                                        //header("location: chatrooms.php");
+                                        header("location: chatrooms.php");
                                         die();
                                     }
                             } else {
                                 echo $conn->error;
                                 $_SESSION["file"] = "Database Failure";
-                                //header("location: chatrooms.php");
+                                header("location: chatrooms.php");
                                 die();
                             }
                     } else {
                         $_SESSION["file"] = "Error Uploading Files!";
-                        header("location: chatroooms.php");
+                        header("location: chatrooms.php");
                         die();
                     }
                 }
@@ -101,13 +101,13 @@
                             } else {
                                 echo $conn->error;
                                 $_SESSION["file"] = "Database Failure";
-                                //header("location: chatrooms.php");
+                                header("location: chatrooms.php");
                                 die();
                             }
                     } else {
                         echo $conn->error;
                         $_SESSION["file"] = "Database Failure";
-                        //header("location: chatrooms.php");
+                        header("location: chatrooms.php");
                         die();
                     }
                 }
