@@ -1,0 +1,15 @@
+{
+	"background_color":	"red",
+	"description":		"Chat For Nerds on Tech Topics",
+	"display":		"fullscreen",
+	"icons":	[
+		{
+			"src":		"icon/chat-icon.png",
+			"sizes":	"192x192",
+			"type":		"image/png"
+		}
+	],
+	"name":			"Nerd's Tech Chat",
+	"short_name":		"TechChat",
+	"start_url":		"/login"
+}
