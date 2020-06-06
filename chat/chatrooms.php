@@ -61,10 +61,10 @@
         </div>
     </nav>
 
-    <div class="media border p-3">
         <?php
             if($result != FALSE) {
                 while($row = $result->fetch_assoc()) {
+                    echo "<div class='media border p-3'>";
                     echo "<img src='../chat/img/${row['roomid']}' class='mr-3 mt-3 rounded-circle' style='width:60px;'>";
                     echo "<div class='media-body'>";
                     echo "<a href='index.php?id=${row['roomid']}'>";
@@ -72,10 +72,10 @@
                     echo "</a>";
                     echo "<p>${row['roomdescription']}</p>";
                     echo "</div>";
+                    echo "</div>";
                 }
             }
         ?>
-    </div>
 
 </body>
 
